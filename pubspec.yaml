@@ -4,17 +4,32 @@ version: 0.0.1
 homepage:
 
 environment:
-  sdk: ^3.6.0
-  flutter: ">=1.17.0"
+  sdk: '>=3.3.4 <4.0.0'
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  common_sdk:
+    git:
+      url: https://github.com/virnavi/flutter_starter.git
+      ref: v0.0.1
+      path: common_sdk
+  json_client:
+    git:
+      url: https://github.com/virnavi/flutter_starter.git
+      ref: v0.0.1
+      path: json_client
+  json_annotation: ^4.9.0
+  injectable: ^2.5.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  json_serializable: ^6.8.0
+  build_runner: any
+  injectable_generator: ^2.4.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
